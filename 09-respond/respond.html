@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>responsible web</title>
+	<style>
+	body {
+		color: #555;
+		font: 12px/1.5 'Trebuchet MS',sans-serif;
+	}
+	#wrap {
+		width: 970px;
+		margin: 0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
+	@media screen and (min-width: 1200px) {
+		#wrap {
+			width: 1200px;
+		}
+	}
+	@media screen and (max-width: 970px) {
+		#wrap {
+			width: auto;
+		}
+	}
+	@media screen and (max-width: 970px) and (min-width: 481px) {
+		body {
+			background-color: yellow;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		body {
+			font-size: 14px;
+		}
+	}
+	@media screen and (orientation: portrait) {
+		h1:after {
+			content: ' portrait view';
+			font-size: .8em;
+			color: blue;
+		}
+	}
+	@media screen and (orientation: landscape) {
+		h1:after {
+			content: ' landscape view';
+			font-size: .8em;
+			color: red;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>LOGO</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint accusantium maiores hic libero, error optio obcaecati quis illum quas, amet praesentium saepe fugiat fugit voluptatem omnis et dignissimos nobis vero voluptatum magnam ex, cupiditate nemo asperiores laudantium! Magni delectus modi doloribus quia veritatis repellendus dolor aliquid fuga. Aspernatur quo ipsa eos, rerum? Nemo provident magni animi odit nam nulla quia quis consectetur, quas neque deserunt esse molestias commodi aperiam distinctio iure enim unde fugit magnam quo tempora harum veritatis repellendus error. Nulla eaque odit, minus reiciendis amet impedit modi culpa molestias expedita asperiores. Voluptatum recusandae cupiditate consequatur ratione, excepturi sunt.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>shadow</title>
+	<style>
+	/*
+		selector {
+			-webkit-attribute: value; 	Chrome, Safari
+			-moz-attribute: value;		Firefox
+			-ms-attribute: value;		IE, Outlook
+			-o-attribute: value;		Opera
+			attribute: value; 
+		}
+	*/
+	#wrap {
+		width: 600px;
+		margin: 0 auto;
+	}
+	#wrap h1 {
+		border: 1px solid #333;
+		padding: .5em;
+		font: bold 100px arial,sans-serif;
+		text-transform: uppercase;
+		text-shadow: 
+			2px 2px 0 rgba(255,255,255,1),
+			-20px 10px 10px rgba(0,0,0,.4);
+		box-shadow: 
+			10px 10px 20px rgba(0,0,0,.5),
+			inset 5px 5px 30px 10px rgba(255,0,0,.3);
+	}	
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>shadow</h1>
+	</div>
+</body>
+</html>

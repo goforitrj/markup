@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>transition</title>
+	<style>
+	body {
+		font: 12px 'Malgun Gothic',sans-serif;
+	}
+	#wrap {
+		width: 900px;
+		margin: 0 auto;
+	}
+	.box {
+		width: 100px;
+		height: 100px;
+		background-color: lime;
+		/*transition: width 3s 1s linear;*/
+		/*transition-property: width;
+		transition-duration: 3s;
+		transition-delay: 1s;
+		transition-timing-function: linear;*/
+		/* linear | ease | ease-in | ease-out | ease-in-out | steps(1, start) | steps(1, end) */
+		/*transition: 
+			width 3s linear,
+			height 1s 3s,
+			background-color 2s 4s;*/
+		/*transition: all 2s;*/
+		/*transition: all 1s cubic-bezier(0.25, 1.5, 0.75, -0.5);*/
+		transition: all 1s steps(20, end);
+	}
+	.box:hover {
+		width: 100%;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="box">
+			
+		</div>
+	</div>
+</body>
+</html>

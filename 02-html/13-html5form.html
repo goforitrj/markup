@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5 form</title>
+</head>
+<body>
+	
+<form action="#" method="post">
+	<fieldset>
+		<legend>html5 form</legend>
+		<p>
+			<label for="username">이름</label>
+			<input type="text" id="username" name="username" value="" placeholder="user name" autofocus="autofocus">
+		</p>
+		<p>
+			<label for="useremail">이메일</label>
+			<input type="email" id="useremail" name="useremail" value="" placeholder="usermail@host.com" required="required">
+		</p>
+		<p>
+			<label for="userurl">웹사이트</label>
+			<input type="url" id="userurl" name="userurl" value="">
+		</p>
+		<p>
+			<label for="order">주문수량</label>
+			<input type="number" id="order" name="order" min="1" max="20" value="3">
+			<span>개</span>
+		</p>
+		<p>
+			<label for="userrange">길이</label>
+			<input type="range" id="userrange" name="userrange" min="0" max="100" step="10" value="30">
+		</p>
+		<p>
+			<label for="userdate">제출일</label>
+			<input type="date" id="userdate" name="userdate" min="2017-09-10" max="2017-10-10" value="2017-09-12">
+		</p>
+		<p>
+			<label for="usercolor">색상선택</label>
+			<input type="color" id="usercolor" name="usercolor" value="#11b815">
+		</p>
+		<p>
+			<label for="usertel">연락처</label>
+			<input type="tel" id="usertel" name="usertel" value="">
+		</p>
+	</fieldset>
+	<input type="submit" value="Send">
+</form>
+
+</body>
+</html>

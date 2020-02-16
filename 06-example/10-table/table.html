@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+	<style>
+	/* reset */
+	html,body {width: 100%; height: 100%}
+	body,h1,h2,h3,h4,ul,li,p {margin: 0; padding: 0}
+	body,h1,h2,h3,h4,th,td {font-family: 'Malgun Gothic','맑은 고딕',sans-serif; font-size: 12px}
+	li {list-style: none}
+	em {font-style: normal}
+	img {vertical-align: top}
+	table {border-collapse: collapse}
+	a {text-decoration: none}
+	a:hover,a:focus {text-decoration: underline}
+	caption {display: none}
+
+	/* style */
+	.tbl {width: 800px; margin: 0 auto}
+	.tbl h1 {padding: 20px 0; font-size: 20px}
+	.tbl table {width: 100%}
+	.tbl table th, .tbl table td {padding: 4px 0; border: 1px solid #ccc; color: #777; text-align: center}
+	.tbl table thead th {padding: 6px 0; background-color: #efefef; color: #666}
+	.tbl table tfoot th, .tbl table tfoot td {padding: 6px 0; background-color: #efefef; color: #666; font-weight: bold}
+	</style>
+</head>
+<body>
+<div class="tbl">
+	<h1>메이져리그 2007시즌 1위~6위 팀순위</h1>
+	<!-- UI Object -->
+	<table>
+		<caption>메이져리그 2007시즌 1위~6위 팀순위입니다.</caption>
+		<colgroup>
+			<col width="10%">
+			<col>
+			<col width="10%">
+			<col width="10%">
+			<col width="10%">
+			<col width="10%">
+			<col width="10%">
+			<col width="10%">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">순위</th>
+				<th scope="col">팀</th>
+				<th scope="col">경기수</th>
+				<th scope="col">승</th>
+				<th scope="col">패</th>
+				<th scope="col">승률</th>
+				<th scope="col">승차</th>
+				<th scope="col">최근</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>콜로라도</td>
+				<td>163</td>
+				<td>90</td>
+				<td>73</td>
+				<td>0.552</td>
+				<td>-</td>
+				<td>9승-1패</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>샌디에이고</td>
+				<td>163</td>
+				<td>89</td>
+				<td>74</td>
+				<td>0.546</td>
+				<td>1</td>
+				<td>4승-6패</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>뉴욕M</td>
+				<td>163</td>
+				<td>88</td>
+				<td>74</td>
+				<td>0.543</td>
+				<td>1.5</td>
+				<td>4승-6패</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td>애틀랜타</td>
+				<td>163</td>
+				<td>84</td>
+				<td>78</td>
+				<td>0.519</td>
+				<td>5.5</td>
+				<td>5승-5패</td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td>밀워키</td>
+				<td>163</td>
+				<td>83</td>
+				<td>79</td>
+				<td>0.512</td>
+				<td>6.5</td>
+				<td>5승-5패</td>
+			</tr>
+			<tr>
+				<th scope="row">6</th>
+				<td>LAD</td>
+				<td>163</td>
+				<td>82</td>
+				<td>80</td>
+				<td>0.506</td>
+				<td>7.5</td>
+				<td>3승-7패</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th scope="row">우승</th>
+				<td>콜로라도</td>
+				<td>845</td>
+				<td>448</td>
+				<td>511</td>
+				<td>0.521</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+		</tfoot>
+	</table>
+	<!-- //UI Object -->
+</div>
+</body>
+</html>

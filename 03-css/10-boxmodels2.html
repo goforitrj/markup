@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>boxmodels</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.box {
+		display: block;
+		/*display: inline-block;*/
+
+		margin: 20px;
+		/*padding-top: 20px;*/
+		padding: 20px;
+		/*padding: 100px 50px;*/ /*top bottom | right left*/
+		/*padding: 100px 50px 10px;*/ /*top | right left | bottom*/
+		/*padding: 100px 50px 10px 0;*/ /*top | right | bottom | left*/
+
+		/*border-style : solid | dashed | dotted | double | inset | outset | ridge | groove */
+		/*border-color */
+		/*border-width */
+		border: 5px solid black;
+		border-style: double;
+		background-color: lime;
+		/* top right bottom left */
+	}
+	</style>
+</head>
+<body>
+	
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum, quia. Quia non ex, praesentium eum iste unde! Odit maiores, quibusdam quas nobis libero impedit temporibus quasi veritatis iste enim.
+</div>
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum, quia. Quia non ex, praesentium eum iste unde! Odit maiores, quibusdam quas nobis libero impedit temporibus quasi veritatis iste enim.
+</div>
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum, quia. Quia non ex, praesentium eum iste unde! Odit maiores, quibusdam quas nobis libero impedit temporibus quasi veritatis iste enim.
+</div>
+<span class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis, optio eos ab dolore, corporis, rem tempore totam alias possimus repellendus architecto ipsa deserunt sint aliquid! Eius, obcaecati! Possimus, ipsa!
+</span>
+
+</body>
+</html>

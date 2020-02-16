@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>clear</title>
+	<style>
+	img {
+		vertical-align: top;
+	}
+	.area {
+		width: 800px;
+		overflow: hidden; /* 영역에서 넘치는 부분 */
+		margin: 0 auto;
+		border: 3px dashed red;
+		*zoom: 1; /* IE6,IE7 Hack */
+	}
+	/*.area:after {
+		content: '';
+		display: block;
+		clear: both;
+	}*/
+	.area .thumb {
+		float: left;
+		border: 3px solid black;
+	}
+	.cls {
+		clear: both;
+	}
+	</style>
+</head>
+<body>
+	
+<div class="area">
+	<div class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=2" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=5" alt=""></div>
+</div>
+<p class="cls">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, a. Expedita enim quibusdam eos, at voluptates hic. Hic voluptate harum ut illum rerum nobis suscipit excepturi molestias, molestiae illo perferendis impedit, aut sed voluptatibus facilis numquam commodi non assumenda, veritatis ab iste id quaerat ipsum accusantium laboriosam. Recusandae praesentium a, beatae optio dicta quas impedit, tempora perferendis rem nesciunt explicabo commodi at, vitae natus facere nostrum error eum. Consectetur eius aperiam, repudiandae ex vero! A sit, molestias, rerum dolorem veritatis natus tempore, suscipit at in pariatur perferendis nesciunt! Dolorum asperiores dignissimos nisi laboriosam doloribus facere nulla, quae ab et necessitatibus.</p>
+
+</body>
+</html>

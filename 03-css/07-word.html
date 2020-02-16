@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>word-break, white-space</title>
+	<style>
+	body {
+		font-family: 'Malgun Gothic',sans-serif;
+		font-size: 16px;
+	}
+	.content, .content2, .content3 {
+		width: 500px;
+		border: 3px solid black;
+	}
+	.content p {
+		word-break: break-all;
+	}
+	.content2 p {
+		text-align: justify;
+	}
+	.content3 p {
+		text-align: justify;
+		word-break: break-all;
+	}
+	/* white-space : nowrap | pre | pre-wrap | pre-line */
+	.white1 {
+		width: 600px;
+		border: 2px solid black;
+		white-space: pre;
+	}
+	.white2 {
+		width: 600px;
+		border: 2px solid black;
+		white-space: pre-wrap;
+	}
+	.white3 {
+		width: 600px;
+		border: 2px solid black;
+		white-space: pre-line;
+	}
+	</style>
+</head>
+<body>
+<!--
+<div class="content">
+	<p>Loremipsumdolorsitamet,consecteturadipisicingelit.Dicta,earumexpeditatotamolutaatcum.Autemillumsaepesedprovidenteligendiundenulla.Minimacumquequidemrepellendussuscipitsitsimilique.</p>
+</div>
+<div class="content2">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptates omnis labore, ut adipisci dolorem quisquam enim reprehenderit, sapiente ipsa odio vel aspernatur velit eius quasi! Laboriosam provident fugiat, neque officiis! Quis ducimus porro amet omnis beatae aliquid, nihil voluptates enim sit placeat laboriosam optio harum culpa architecto, laborum impedit, dolores quae quaerat, nulla ea quam cumque dolore. Ipsa facere doloribus, doloremque delectus, voluptatem ducimus totam neque porro amet impedit ea magni labore sed mollitia earum accusantium, officia consectetur illo ipsum aspernatur laudantium culpa? Aliquid earum vitae libero fuga error, nostrum vero hic delectus, eaque, veniam tenetur nisi eos ratione?</p>
+</div>
+<div class="content3">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptates omnis labore, ut adipisci dolorem quisquam enim reprehenderit, sapiente ipsa odio vel aspernatur velit eius quasi! Laboriosam provident fugiat, neque officiis! Quis ducimus porro amet omnis beatae aliquid, nihil voluptates enim sit placeat laboriosam optio harum culpa architecto, laborum impedit, dolores quae quaerat, nulla ea quam cumque dolore. Ipsa facere doloribus, doloremque delectus, voluptatem ducimus totam neque porro amet impedit ea magni labore sed mollitia earum accusantium, officia consectetur illo ipsum aspernatur laudantium culpa? Aliquid earum vitae libero fuga error, nostrum vero hic delectus, eaque, veniam tenetur nisi eos ratione?</p>
+</div>
+-->
+<hr>
+<div class="white1">
+	Lorem
+	ipsum dolor sit amet,
+	consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, vitae, sit! Laudantium fuga id unde aliquam cupiditate in quasi error? Unde hic voluptates incidunt provident eveniet ipsum quas cum quaerat?
+</div>
+<div class="white2">
+	Lorem
+	ipsum dolor sit amet,
+	consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, vitae, sit! Laudantium fuga id unde aliquam cupiditate in quasi error? Unde hic voluptates incidunt provident eveniet ipsum quas cum quaerat?
+</div>
+<div class="white3">
+	Lorem
+	ipsum dolor sit amet,
+	consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, vitae, sit! Laudantium fuga id unde aliquam cupiditate in quasi error? Unde hic voluptates incidunt provident eveniet ipsum quas cum quaerat?
+</div>
+
+</body>
+</html>

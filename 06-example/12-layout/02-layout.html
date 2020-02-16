@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout, 2column</title>
+	<style>
+	/* reset */
+	body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+	body,input,textarea,select,button,table{font-family:'Malgun Gothic','돋움',Dotum,AppleGothic,sans-serif;font-size:12px}
+	img,fieldset{border:0}
+	img{vertical-align:top}
+	ul,ol{list-style:none}
+	em,address{font-style:normal}
+	a{text-decoration:none}
+	a:hover,a:active,a:focus{text-decoration:underline}
+
+	/* layout */
+	#wrap {
+		background-color: gray;
+	}
+	#header {
+		min-width: 970px;
+		padding: 20px 0;
+		background-color: red;
+	}
+	#header .header-area {
+		width: 970px;
+		margin: 0 auto;
+	}
+	#container {
+		width: 970px;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		*zoom: 1;
+		background-color: lime;
+	}
+	#container:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	#container #content {
+		float: right;
+		width: 600px;
+		background-color: blue;
+	}
+	#container #content .inn {
+		padding: 20px;
+	}
+	#container .aside {
+		float: left;
+		width: 370px;
+		background-color: green;
+	}
+	#container .aside .inn {
+		padding: 20px;
+	}
+	#footer {
+		min-width: 970px;
+		padding: 20px 0;
+		background-color: silver;
+	}
+	#footer .footer-area {
+		width: 970px;
+		margin: 0 auto;
+	}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+	<div class="header-area">
+		<h1>LOGO</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sapiente totam doloremque adipisci quod id, nam laboriosam, molestias. Exercitationem aperiam provident nesciunt ullam aspernatur unde tempora sit nam, itaque modi.</p>
+	</div>
+	</div>	
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+		<div class="inn">
+			<h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic corrupti eos totam fuga magni distinctio, nobis a at suscipit odio quasi accusamus ad nostrum debitis delectus est reiciendis perferendis exercitationem sit, commodi voluptas. Pariatur ratione et, esse sequi quisquam qui fugit libero saepe ad perferendis corporis, neque est maiores culpa facere assumenda possimus optio fuga repellat nam mollitia, cupiditate ut corrupti. Quisquam officiis, ipsa maiores odio rerum molestiae iusto omnis! Optio et nihil a, asperiores laborum explicabo officia quos commodi, velit enim aliquam obcaecati molestias assumenda perferendis illum similique sunt aut, tenetur natus? Vero non vitae, soluta esse, culpa debitis.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic corrupti eos totam fuga magni distinctio, nobis a at suscipit odio quasi accusamus ad nostrum debitis delectus est reiciendis perferendis exercitationem sit, commodi voluptas. Pariatur ratione et, esse sequi quisquam qui fugit libero saepe ad perferendis corporis, neque est maiores culpa facere assumenda possimus optio fuga repellat nam mollitia, cupiditate ut corrupti. Quisquam officiis, ipsa maiores odio rerum molestiae iusto omnis! Optio et nihil a, asperiores laborum explicabo officia quos commodi, velit enim aliquam obcaecati molestias assumenda perferendis illum similique sunt aut, tenetur natus? Vero non vitae, soluta esse, culpa debitis.</p>
+		</div>
+		</div>
+		<!-- //content -->
+		<!-- aside -->
+		<div class="aside">
+		<div class="inn">
+			<h2>Aside</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis omnis natus culpa et esse, autem? Facere delectus quaerat earum laudantium nesciunt, voluptatem aut amet voluptate debitis distinctio autem similique. Illum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quod eveniet aperiam quidem, iste, velit minima adipisci doloribus doloremque sint. Aut cupiditate expedita quo velit dignissimos beatae quisquam quidem voluptates esse quasi. Culpa quo suscipit quia, odio, vero laudantium assumenda dolore consequatur expedita fugiat, iure architecto adipisci mollitia consectetur aut facere ad voluptates exercitationem. Impedit corrupti qui illo dolore aperiam magni, explicabo praesentium! Animi, alias, eum? Atque rerum, totam quibusdam tempora, nesciunt sunt fugit consequatur quam nemo quae omnis quod saepe sequi tempore quos magnam similique, nam repellendus dolore! Ipsa voluptate dolore delectus hic, aperiam molestias earum fugiat veniam quam.</p>
+		</div>
+		</div>
+		<!-- //aside -->
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<div id="footer">
+	<div class="footer-area">
+		<address>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, culpa.</address>
+		<p>Copyright &copy; </p>
+	</div>
+	</div>
+	<!-- //footer -->
+</div>	
+</body>
+</html>

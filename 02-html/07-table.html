@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+</head>
+<body>
+
+<!-- scope=col | row | colgroup | rowgroup -->
+<table border width="100%">
+	<caption>table caption</caption>
+	<colgroup>
+		<col>
+		<col>
+		<col>
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan="3">table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+		<tr>
+			<!-- <td>table data cell</td> -->
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+		<tr>
+			<!-- <td>table data cell</td> -->
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th scope="row">result</th>
+			<td colspan="3">...</td>
+			<!-- <td>...</td> -->
+			<!-- <td>...</td> -->
+		</tr>
+	</tfoot>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>
+	
+<form action="#" method="post"> <!-- get | post -->
+	<fieldset>
+		<legend>fieldset legend</legend>
+		<p>
+			<label for="name">이름</label>
+			<input type="text" id="name" name="name" value="">
+		</p>
+		<p>
+			<label for="idname">아이디</label>
+			<input type="text" id="idname" name="idname" value="">
+			<input type="button" value="아이디중복확인">
+		</p>
+		<p>
+			<label for="userpass">비밀번호</label>
+			<input type="password" id="userpass" name="userpass" value="">
+		</p>
+		<p>
+			<label for="usercomm">의견</label>
+			<textarea name="usercomm" id="usercomm" cols="60" rows="10"></textarea>
+		</p>
+		<p>
+			<label for="usersel">지역선택</label>
+			<select name="usersel" id="usersel">
+				<option value="">서울</option>
+				<option value="">부산</option>
+				<option value="">광주</option>
+				<option value="">대구</option>
+				<option value="">대전</option>
+			</select>
+		</p>
+		<p>
+			<span>성별</span>
+			<label for="male">남자</label>
+			<input type="radio" id="male" name="choice" value="male">
+			<label for="female">여자</label>
+			<input type="radio" id="female" name="choice" value="female">
+		</p>
+		<!-- <p>
+			<span>취미는?</span>
+			<label for="trip">여행</label>
+			<input type="checkbox" id="trip" name="trip" value="trip">
+			<label for="read">독서</label>
+			<input type="checkbox" id="read" name="read" value="read">
+			<label for="movie">영화감상</label>
+			<input type="checkbox" id="movie" name="movie" value="movie">
+		</p> -->
+		<p>
+			<span>취미는?</span>
+			<label>여행 <input type="checkbox" name="trip" value="trip"></label>
+			<label>독서 <input type="checkbox" name="read" value="read"></label>
+			<label>영화감상 <input type="checkbox" name="movie" value="movie"></label>
+		</p>
+	</fieldset>
+	<p>
+		<!-- <input type="submit" value="전송"> -->
+		<button type="submit">전송</button>
+		<!-- <input type="reset" value="취소"> -->
+		<button type="reset">취소</button>
+	</p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>boxmodels</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	} /*스타일의초기화*/
+	/*
+	boxmodels
+		content width / height
+		border
+		padding
+		margin
+	*/
+	.box {
+		width: 600px;
+		/*border: 5px solid black;*/
+		/*padding: 20px;*/
+		margin: 30px;
+		background-color: lime;
+	}
+	.box2 {
+		border: 5px solid black;
+		padding: 20px;
+	}
+	.box3 {
+		box-sizing: border-box; /* css3 <- IE8,7,...(X) */
+	}
+	</style>
+</head>
+<body>
+	
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum, quia. Quia non ex, praesentium eum iste unde! Odit maiores, quibusdam quas nobis libero impedit temporibus quasi veritatis iste enim.
+</div>
+<div class="box box2">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum, quia. Quia non ex, praesentium eum iste unde! Odit maiores, quibusdam quas nobis libero impedit temporibus quasi veritatis iste enim.
+</div>
+<div class="box box2 box3">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorum, quia. Quia non ex, praesentium eum iste unde! Odit maiores, quibusdam quas nobis libero impedit temporibus quasi veritatis iste enim.
+</div>
+
+</body>
+</html>

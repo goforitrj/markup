@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+	.box {
+		width: 200px;
+		padding: 20px;
+		border: 5px solid black;
+		background-color: rgba(255,0,0,.5);
+		font: 12px/1.6 verdana,sans-serif;
+	}
+	.box:first-letter {
+		font-size: 2em;
+		font-weight: bold;
+	}
+	.area {
+		position: relative;
+		width: 800px;
+		margin: 0 auto;
+		border: 5px dashed red;
+	}
+	.a {
+		position: relative;
+		z-index: 100;
+		background-color: rgba(255,0,0,.8);
+	}
+	.b {
+		position: relative;
+		left: 50px;
+		z-index: 200;
+		margin-top: -200px;
+		background-color: rgba(0,255,0,.8);
+	}
+	.c {
+		position: relative;
+		left: 100px;
+		margin-top: -200px;
+		background-color: rgba(0,0,255,.8);
+	}
+	</style>
+</head>
+<body>
+	
+<div class="area">	
+	<div class="box a">A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sequi maxime, numquam reprehenderit sed distinctio assumenda beatae illo, provident laudantium nobis ad vero dolor eum. Impedit, laboriosam! Asperiores, molestiae quam!</div>
+	<div class="box b">B Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sequi maxime, numquam reprehenderit sed distinctio assumenda beatae illo, provident laudantium nobis ad vero dolor eum. Impedit, laboriosam! Asperiores, molestiae quam!</div>
+	<div class="box c">C Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sequi maxime, numquam reprehenderit sed distinctio assumenda beatae illo, provident laudantium nobis ad vero dolor eum. Impedit, laboriosam! Asperiores, molestiae quam!</div>
+</div>
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laudantium, praesentium dolorum et voluptate dolores? Ipsum magni fugit accusamus, cupiditate accusantium asperiores quisquam. Accusantium culpa, magnam veniam iure consequuntur fugit officia accusamus recusandae. Voluptates quos quae maxime cupiditate fugiat nulla pariatur voluptatibus deserunt suscipit totam corrupti, dolore odit maiores facere ut quia quidem enim, quasi vero assumenda ratione aliquam odio explicabo eveniet. Itaque, nesciunt placeat impedit iste unde et est corporis aut laudantium voluptas amet ab, odit alias? Natus saepe aspernatur explicabo consectetur accusantium in voluptate sequi eaque veniam, nobis, unde a obcaecati dolor officia aperiam pariatur quae illum nemo.</p>
+
+</body>
+</html>

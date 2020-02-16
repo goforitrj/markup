@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css selector2</title>
+	<style>
+	body {
+		color: #333;
+	}
+	a {
+		color: #888;
+		text-decoration: none;
+	}
+	a:hover, a:active, a:focus {
+		color: red;
+		text-decoration: underline;
+	}
+	.lead:first-line {
+		background-color: lime;
+	}
+	.lead:first-letter {
+		font-size: 5em;
+	}
+	h1:before {
+		content: 'Before area ';
+		color: blue;
+	}
+	h1:after {
+		content: ' After area';
+		color: red;
+	}
+	div {background-color: lime} /*type, 1*/
+	.sample {background-color: green} /*class, 10*/
+	#sample {background-color: purple} /*id, 100*/
+
+	div {background-color: red !important} /*!important, 무조건 적용되는 값*/
+	</style>
+</head>
+<body>
+	
+<h1>css selector</h1>
+<p class="lead"><a href="http://naver.com/">naver</a> consectetur adipisicing elit. Assumenda repudiandae, harum consequuntur. Consequuntur distinctio ducimus quisquam debitis rem eum itaque, explicabo. Non eius, ad excepturi similique nulla laborum eligendi dolore illum sint natus magnam praesentium ipsam adipisci rerum qui iusto, veniam, blanditiis sunt quibusdam in impedit voluptatem exercitationem minima. Deleniti doloremque autem exercitationem, fugit maxime asperiores sit rem ducimus, iste ullam hic ab laboriosam a in blanditiis dolores! Explicabo, ducimus unde at eius assumenda quaerat dolores, itaque rerum aut reprehenderit, eligendi provident impedit! Dolorem possimus accusantium quibusdam incidunt obcaecati debitis. Quis nam quo nostrum. <a href="#">Nobis inventore illum pariatur esse magni.</a></p>
+<hr>
+<div class="sample" id="sample" style="background-color: orange">
+	<!-- inline style : 1000 -->
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestias placeat illum ab eum suscipit modi veniam quidem accusantium aliquid itaque vero quam dolores, autem iste voluptates molestiae quos culpa!
+</div>
+
+</body>
+</html>
